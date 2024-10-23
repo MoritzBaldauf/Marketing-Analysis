@@ -81,7 +81,7 @@ save(rfm_clean, file="rfm_clean.rda")
 #---------------------------------------------------------------
 
 rfm_clean <- read_csv("rfm_clean.csv")
-load("rfm_clean.rda")
+rfm_clean <- load("rfm_clean.rda")
 
 #---------------------------------------------------------------
 # Exercise: extend your logic checks
@@ -187,5 +187,7 @@ boxplot(SeatComfort ~ AgeBin, data = rfm_clean,
 plot(rfm_clean$Age, rfm_clean$FlightDistance, main = "Relationship between Age and Flight Distance",
      xlab = "Age", 
      ylab = "Flight Distance")
+
+
 
 
